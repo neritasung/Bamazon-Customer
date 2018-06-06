@@ -91,7 +91,7 @@ function start() {
                 connection.query("UPDATE products SET ? WHERE ?", [{STOCK_QUANTITY: tempQuantity},{ITEM_ID:id}], function (err, result) {
                     if (err) throw err;
                var totalPrice = res[0].PRICE * parseInt(answer.quantity);
-               console.log("Your total price is: " + totalPrice);
+               console.log("Purchase Complete! Your total price is: " + totalPrice);
                                
             });
         }
